@@ -1,0 +1,40 @@
+﻿Sample ID,Location,Species,name,type,subsample,d13C,%C,d15N,%N,C_N
+DW2-Wood-CI-core,core,Carya illinoiensis,Pecan,hard,sawdust,-27.2,51.1,0,0.2,239.3
+DW2-Wood-CI-mid,mid,Carya illinoiensis,Pecan,hard,sawdust,-29.1,42,-1.4,0.1,289.6
+DW2-Wood-CI-outer,out,Carya illinoiensis,Pecan,hard,sawdust,-28.6,47.5,-1.3,0.1,331.9
+DW2-Wood-CL-core,core,Celtis laevigata,Sugarberry,hard,sawdust,-23,48.1,1.3,0.3,143.5
+DW2-Wood-CL-mid,mid,Celtis laevigata,Sugarberry,hard,sawdust,-24.5,46.8,2.3,0.1,328.7
+DW2-Wood-CL-outer,out,Celtis laevigata,Sugarberry,hard,sawdust,-24.9,41.3,-0.8,0.2,189
+DW2-Wood-MG-core,core,Magnolia grandiflora,Southern Magnolia,hard,sawdust,-24.7,46.4,-3.6,0.1,314.7
+DW2-Wood-MG-mid,mid,Magnolia grandiflora,Southern Magnolia,hard,sawdust,-24.7,46.7,-2.6,0.1,500.2
+DW2-Wood-MG-outer,out,Magnolia grandiflora,Southern Magnolia,hard,sawdust,-25.7,48,-1.1,0.1,435.8
+DW2-Wood-PEC AR-core,core,Pinus echinata (from Arkansas),Short Leaf Pine,soft,sawdust,-27.8,49,-5.6,0.2,233.5
+DW2-Wood-PEC AR-mid,mid,Pinus echinata (from Arkansas),Short Leaf Pine,soft,sawdust,-26.6,47.1,-4.7,0.1,512.1
+DW2-Wood-PEC AR-outer,out,Pinus echinata (from Arkansas),Short Leaf Pine,soft,sawdust,-25.5,46.4,-6.7,0.1,333.2
+DW2-Wood-PEC LA-core,core,Pinus echinata,Short Leaf Pine,soft,sawdust,-25.2,50.7,,,
+DW2-Wood-PEC LA-mid,mid,Pinus echinata,Short Leaf Pine,soft,sawdust,-23.1,50.9,,,
+DW2-Wood-PEC LA-outer,out,Pinus echinata,Short Leaf Pine,soft,sawdust,-26.3,49,2.8,0.4,119.2
+DW2-Wood-PEL-core,core,Pinus elliotti,Slash Pine,soft,sawdust,-27.7,60.5,,,
+DW2-Wood-PEL-mid,mid,Pinus elliotti,Slash Pine,soft,sawdust,-26,49.5,,,
+DW2-Wood-PEL-outer,out,Pinus elliotti,Slash Pine,soft,sawdust,-25.2,47.2,-1.3,0.4,108.7
+DW2-Wood-QA-core,core,Quercus alba,White Oak,hard,sawdust,-26.7,47.1,0.5,0.1,369.1
+DW2-Wood-QA-mid,mid,Quercus alba,White Oak,hard,sawdust,-27.5,46,0.7,0.3,150.8
+DW2-Wood-QA-outer,out,Quercus alba,White Oak,hard,sawdust,-28.3,54.4,-1,0.1,570.9
+DW2-Wood-QR-core,core,Quercus rubra,Red Oak,hard,sawdust,-27.6,47.9,-0.6,0.1,319.9
+DW2-Wood-QR-mid,mid,Quercus rubra,Red Oak,hard,sawdust,-27.2,44.3,-0.3,0.1,399.6
+DW2-Wood-QR-outer,out,Quercus rubra,Red Oak,hard,sawdust,-28.5,44.6,-0.2,0.3,151.8
+DW2-Wood-QV-core,core,Quercus virginiana,Live Oak,hard,sawdust,-27.4,44.6,-1,0.3,158.4
+DW2-Wood-QV-mid,mid,Quercus virginiana,Live Oak,hard,sawdust,-28.3,44,-1,0.1,391.4
+DW2-Wood-QV-outer,out,Quercus virginiana,Live Oak,hard,sawdust,-28.5,44.4,-0.9,0.2,183.9
+DW2-Wood-TD-core,core,Taxodium distichum,Bald Cyprus,soft,sawdust,-25.2,49.1,,,
+DW2-Wood-TD-mid,mid,Taxodium distichum,Bald Cyprus,soft,sawdust,-26.7,46.3,,,
+DW2-Wood-TD-outer,out,Taxodium distichum,Bald Cyprus,soft,sawdust,-26.3,46.4,-1.31,0.18,263.1
+DW2-Wood-UA-core,core,Ulmus americana,Elm,hard,sawdust,-27.2,47.8,,,
+DW2-Wood-UA-mid,mid,Ulmus americana,Elm,hard,sawdust,-28.2,46.3,,,
+DW2-Wood-UA-outer,out,Ulmus americana,Elm,hard,sawdust,-28.2,50.5,-1.9,0.17,289.9
+DW2-Wood-X-core,core,x,x,NA,sawdust,-28.1,52.7,,,
+DW2-Wood-X-mid,mid,x,x,NA,sawdust,-28.5,46.8,,,
+DW2-Wood-X-outer,out,x,x,NA,sawdust,-27.6,47.8,,,
+DW2-Wood-Z-core,core,z,z,NA,sawdust,-26,46.6,,,
+DW2-Wood-Z-mid,mid,z,z,NA,sawdust,-27.8,48.5,,,
+DW2-Wood-Z-outer,out,z,z,NA,sawdust,-27,48.7,-5.61,0.11,435.3

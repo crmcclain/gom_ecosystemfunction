@@ -14,8 +14,10 @@ library(SIBER)
 library(viridis)
 library(performance)
 library(sjPlot)
+library(ggplot2)
+library(viridis)
 
-setwd("/Volumes/GoogleDrive/My Drive/Postdoc_UNM/Woodfall/analyses/FINAL")
+
 
 data = read.csv("wdf_xylos.csv", strip.white = T, header = T)
 data$species<-as.factor(data$species)
@@ -153,7 +155,7 @@ dat = merge(niche, comm)
 dat$prop <- dat$sampled/dat$richness #proportion of community sampled
 
 write.csv(dat, "NicheStats_samplerichness_noutliers.csv")
-save.image("/Volumes/GoogleDrive/My Drive/Postdoc_UNM/Woodfall/analyses/FINAL/Xylos_niches_dropoutliers_DATA.RData")
+save.image("Xylos_niches_dropoutliers_DATA.RData")
 
 ###########################################################################
 ### Niche metrics ~ species richness
@@ -271,7 +273,7 @@ anova(rni2) #very significant effect of richness on proportion of niche occupied
 summary(rni2) # spp not significant, but betas very diff for some spp (see plot above)
 check_model(rni2) #good fit
 
-save.image("/Volumes/GoogleDrive/My Drive/Postdoc_UNM/Woodfall/analyses/Xylos_niches_dropoutliers_DATA.RData")
+save.image("Xylos_niches_dropoutliers_DATA.RData")
 
 
 #########################################################################################################
@@ -342,20 +344,20 @@ wood = wood %>% filter(Species %in% c("Pinus elliotti", "Celtis laevigata", "Que
 #plot softwoods - pine
 wood.pe <- wood %>% filter(Species == "Pinus elliotti")
 pe.xy <- data %>% filter(type == "Pinus elliotti")
-pe.xy %>% ggplot(aes(x=d13C, y=d15N)) + geom_point(aes(color=species)) + 
-  geom_point(aes(x=d13C, y=d15N), data=wood.pe) + facet_wrap(~log)
+pe.xy %>% ggplot(aes(x=iso1, y=iso2)) + geom_point(aes(color=group)) + 
+  geom_point(aes(x=d13C, y=d15N), data=wood.pe) + facet_wrap(~log) + labs(x="δ13C", y="δ15N")
 
 #plot hardwoods - sugarberry
 wood.cl <- wood %>% filter(Species == "Celtis laevigata")
 cl.xy <- data %>% filter(type == "Celtis laevigata")
-cl.xy %>% ggplot(aes(x=d13C, y=d15N)) + geom_point(aes(color=species)) + 
-  geom_point(aes(x=d13C, y=d15N), data=wood.cl) + facet_wrap(~log)
+cl.xy %>% ggplot(aes(x=iso1, y=iso2)) + geom_point(aes(color=group)) + 
+  geom_point(aes(x=d13C, y=d15N), data=wood.cl) + facet_wrap(~log) + labs(x="δ13C", y="δ15N")
 
 #plot hardwoods - oak
 wood.qr <- wood %>% filter(Species == "Quercus rubra")
 qr.xy <- data %>% filter(type == "Quercus rubra")
-qr.xy %>% ggplot(aes(x=d13C, y=d15N)) + geom_point(aes(color=species)) + 
-  geom_point(aes(x=d13C, y=d15N), data=wood.qr) + facet_wrap(~log)
+qr.xy %>% ggplot(aes(x=iso1, y=iso2)) + geom_point(aes(color=group)) + 
+  geom_point(aes(x=d13C, y=d15N), data=wood.qr) + facet_wrap(~log) + labs(x="δ13C", y="δ15N")
 
 #calculate ranges
 data.range=data %>% group_by(log, type) %>% summarise(crange=max(d13C)-min(d13C), nrange=max(d15N)-min(d15N))
@@ -369,5 +371,5 @@ range$Cdiff<-format(round(range$Cdiff, 2), nsmall = 2)
 range$Ndiff<-format(round(range$Ndiff, 2), nsmall = 2)
 range
 
-save.image("/Volumes/GoogleDrive/My Drive/Postdoc_UNM/Woodfall/analyses/Xylos_niches_DATA.RData")
+save.image("Xylos_niches_DATA.RData")
 
